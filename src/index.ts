@@ -10,26 +10,26 @@ import { arp } from './arp';
 import { midi } from './midi';
 import { Session } from './session';
 
-interface NoteObject {
+export interface NoteObject {
   note: string[] | string | null;
   length: number;
   level: number;
 }
 
-interface NVP<T> {
+export interface NVP<T> {
   [key: string]: T;
 }
 
-interface TPD {
+export interface TPD {
   T: string[]; // Tonic
   P: string[]; // Predominant (or subdominant)
   D: string[]; // Dominant
 }
 
-type SizzleStyle = 'sin' | 'cos' | 'rampUp' | 'rampDown';
-type progressionScale = 'major' | 'minor' | 'M' | 'm';
+export type SizzleStyle = 'sin' | 'cos' | 'rampUp' | 'rampDown';
+export type progressionScale = 'major' | 'minor' | 'M' | 'm';
 
-interface ClipParams {
+export interface ClipParams {
   notes: string | (string | string[])[];
   pattern: string;
   shuffle?: boolean;
@@ -53,12 +53,12 @@ interface ClipParams {
   volume?: number;
 }
 
-interface ChannelParams extends ClipParams {
+export interface ChannelParams extends ClipParams {
   idx?: number;
   clips?: any;
 }
 
-type SeqFn = (time: string, el: string) => void;
+export type SeqFn = (time: string, el: string) => void;
 
 
 
