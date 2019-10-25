@@ -5,7 +5,7 @@
   "main": "./index.js",
   "scripts": {
     "test": "jest --coverage",
-    "postinstall": "npx tsc --declarations",
+    "postinstall": "npx tsc --declaration",
     "build:node": "npx webpack",
     "build:browser": "TARGET=browser npx webpack",
     "build": "npm t && npm run build:node && npm run build:browser",
