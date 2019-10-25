@@ -61,6 +61,7 @@
   },
   "include": [
     "./src/*.ts",
+    "./src/*.d.ts",
     "node_modules/@types"
   ], /* Concatenate and emit output to single file. */
 }
