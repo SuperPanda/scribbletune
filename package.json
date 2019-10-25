@@ -4,7 +4,7 @@
   "description": "Create music with JavaScript and Node.js!",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "npx jest --coverage",
     "postinstall": "npm run build",
     "build:node": "npx webpack",
     "build:browser": "TARGET=browser npx webpack",
