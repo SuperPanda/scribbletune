@@ -2,12 +2,12 @@
   "name": "scribbletune",
   "version": "3.4.1",
   "description": "Create music with JavaScript and Node.js!",
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "jest --coverage",
     "build:node": "npx webpack",
     "build:browser": "TARGET=browser npx webpack",
-    "build": "npm t && npm run build:node && npm run build:browser",
+    "build": "npm t && npx tsc",
     "watch:browser": "TARGET=browser npx webpack --watch",
     "watch:node": "npx webpack --watch",
     "rebuild": "rm -rf node_modules; rm package-lock.json; npm i; npm run build"
