@@ -8,3 +8,5 @@ coverage
 .npmrc
 ./src/*.js
 ./src/*.d.ts
+!./src/typings.d.ts
+**.map

@@ -1,4 +1,5 @@
 import { Channel } from './channel';
+import { ChannelParams } from './index';
 
 export class Session {
   sessionChannels: Channel[];

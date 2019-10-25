@@ -1,5 +1,6 @@
 import { getScale } from './scale';
 import { pickOne, dice } from './utils';
+import { progressionScale } from './index';
 
 /**
  * Get the chords that go with a given scale/mode

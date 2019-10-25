@@ -1,5 +1,6 @@
 import fs from 'fs';
 import * as jsmidgen from 'jsmidgen';
+import { NoteObject } from './index';
 
 /**
  * Take an array of note objects to generate a MIDI file in the same location as this method is called
