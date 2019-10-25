@@ -1,4 +1,5 @@
 import { clip } from './clip';
+import { ClipParams } from './index';
 
 /**
  * Get the next logical position to play in the session

@@ -1,5 +1,6 @@
 import { isNote, shuffle, expandStr } from './utils';
 import { getChord } from './chord';
+import { ClipParams } from './index';
 
 /* tslint:disable:no-var-requires */
 const browserClip = typeof window !== 'undefined' && require('./browserClip');
